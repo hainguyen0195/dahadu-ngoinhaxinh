@@ -1,0 +1,449 @@
+
+.gv_banner_block {
+    position: relative;
+    overflow: hidden;
+}
+
+.gv_banner_block .inner {
+    position: relative;
+}
+
+.gv_banner_block .owl-item .slide_item {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+.gv_banner_block .owl-item .slide_item .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.gv_banner_block .owl-item .slide_item .box_wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+    width: 100%;
+}
+
+.gv_banner_block .owl-item .slide_item .box_wrap .container {
+    height: 100%;
+    position: relative;
+}
+
+.gv_banner_block .owl-item .slide_item .box_wrap .container .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 100px 0 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    width: 94%;
+    margin: 0 auto;
+    max-width: 990px;
+    align-content: center;
+    height: 100%;
+}
+
+.gv_banner_block .owl-item .slide_item .box_wrap .container .caption .cap_inner {
+    display: block;
+    min-width: 100%;
+    text-align: center;
+}
+
+.gv_banner_block .owl-item .slide_item .box_wrap .container .caption .bt {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.gv_banner_block .owl-item .slide_item .box_wrap .container .caption .br {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 3px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.gv_banner_block .owl-item .slide_item .box_wrap .container .caption .bb {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.gv_banner_block .owl-item .slide_item .box_wrap .container .caption .bl {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    bottom: 3px;
+    width: 3px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.gv_banner_block .owl-item .slide_item .box_wrap .container .caption * {
+    color: #FFF;
+}
+
+.gv_banner_block .owl-item .slide_item .box_wrap .container .caption .find {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    display: table;
+    margin-bottom: 10h2px;
+}
+
+.gv_banner_block .owl-item .slide_item .box_wrap .container .caption h2.title {
+    font: 50px OpenSansExtraBold;
+    text-decoration: none;
+    display: block;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+    transform-origin: 50% 100%;
+    overflow: hidden;
+    color: var(--colormainhv);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #fff , -1px 1px 1px #fff , 1px -1px 1px #fff ,-1px -1px 1px #fff;
+}
+
+.gv_banner_block .owl-item .slide_item .box_wrap .container .caption h4.title {
+    font: 50px OpenSansExtraBold;
+    text-decoration: none;
+    display: block;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+    transform-origin: 50% 100%;
+    overflow: hidden;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.gv_banner_block .owl-item .slide_item .box_wrap .container .caption .des-slider {
+    display: block;
+    position: relative;
+    font: 20px OpenSansRegular;
+    line-height: 36px;
+    margin: 0 0 20px 0;
+}
+
+.gv_banner_block .owl-item .slide_item .box_wrap .container .caption .arrow {
+    color: #fff;
+    font: 20px OpenSansBold;
+    line-height: 29px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 35px;
+    margin: 0 10px 0 0;
+    border-radius: 5px;
+    position: relative;
+    background: var(--bgmain);
+    text-transform: uppercase;
+}
+.gv_banner_block .owl-item .slide_item .box_wrap .container .caption .arrow i{
+    padding: 0 5px 0 0;
+}
+
+.gv_banner_block .owl-item.active .slide_item .bg {
+    -webkit-animation-duration: 4s;
+    -moz-animation-duration: 4s;
+    -ms-animation-duration: 4s;
+    -o-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: banner_style;
+    animation-name: banner_style;
+}
+
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption .find,
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption .arrow,
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption .arrow2,
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption .bt,
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption .bb,
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption .bl,
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption .br {
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -ms-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption h2.title {
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption h4.title {
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption .des-slider {
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption .arrow,
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption .arrow2 {
+    -webkit-animation-duration: 1.6s;
+    -moz-animation-duration: 1.6s;
+    -ms-animation-duration: 1.6s;
+    -o-animation-duration: 1.6s;
+    animation-duration: 1.6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption .bt {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-name: top_left;
+    animation-name: top_left;
+}
+
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption .br {
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -ms-animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    -webkit-animation-name: top_bottom;
+    animation-name: top_bottom;
+}
+
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption .bb {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-name: bottom_left;
+    animation-name: bottom_left;
+}
+
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption .bl {
+    -webkit-animation-delay: 2.5s;
+    -moz-animation-delay: 2.5s;
+    -ms-animation-delay: 2.5s;
+    -o-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+    -webkit-animation-name: bottom_top;
+    animation-name: bottom_top;
+}
+
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption h2.title {
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    -ms-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-name: trf_left;
+    animation-name: trf_left;
+}
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption h4.title {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -ms-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    animation-delay: 0.3s;
+    -webkit-animation-name: trf_left;
+    animation-name: trf_left;
+}
+
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption .des-slider {
+    -webkit-animation-delay: 0.45s;
+    -moz-animation-delay: 0.45s;
+    -ms-animation-delay: 0.45s;
+    -o-animation-delay: 0.45s;
+    animation-delay: 0.45s;
+    -webkit-animation-name: trf_left;
+    animation-name: trf_left;
+}
+
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption .arrow,
+.gv_banner_block .owl-item.active .slide_item .box_wrap .container .caption .arrow2 {
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    -ms-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-name: trf_left;
+    animation-name: trf_left;
+}
+
+@keyframes top_left {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes top_bottom {
+    from {
+        height: 0
+    }
+    to {
+        height: 100%
+    }
+}
+
+@keyframes bottom_left {
+    from {
+        left: 100%
+    }
+    to {
+        left: 0
+    }
+}
+
+@keyframes bottom_top {
+    from {
+        top: 100%
+    }
+    to {
+        top: 3px
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes banner_sub {
+    from {
+        -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%)
+    }
+    to {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+@keyframes trf_left {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0)
+    }
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+@-webkit-keyframes banner_style {
+    from {
+        -webkit-transform: scale3d(1.5, 1.5, 1.5);
+        transform: scale3d(1.5, 1.5, 1.5)
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+@keyframes banner_style {
+    from {
+        -webkit-transform: scale3d(1.5, 1.5, 1.5);
+        transform: scale3d(1.5, 1.5, 1.5)
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+.owl-carousel.Owl-slider .owl-dots {
+    margin-top: 0px;
+    position: absolute;
+    left: 0;
+    right: 5%;
+    bottom: 30px;
+    text-align: right;
+}
+
+.owl-carousel.Owl-slider .owl-dots .owl-dot {
+    width: 13px;
+    height: 13px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    margin: 2px;
+    transition: 0.2s all;
+}
+
+.owl-carousel.Owl-slider .owl-dots .owl-dot.active {
+    border-color: #fff;
+}
+
+.owl-carousel.Owl-slider .owl-dots .owl-dot span {
+    width: 3px;
+    height: 3px;
+    background: #fff;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.owl-carousel.Owl-slider .owl-dots .owl-dot:hover span {
+    background: #fff
+}
+
+.owl-carousel.Owl-slider .owl-dots .owl-dot.active span {
+    background: #fff
+}
